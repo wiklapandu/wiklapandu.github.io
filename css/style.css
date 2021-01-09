@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.justify-center {
+.d-flex.justify-center {
   justify-content: center;
 }
 
-.align-center {
+.d-flex.justify-center.align-center {
   align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
