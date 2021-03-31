@@ -18,8 +18,8 @@
 <a href="https://wiklapandu.github.io/link/" target="_blank">
     <img src="https://img.shields.io/badge/Show web-live-red?logo=github&style=plastic">
 </a>
-<a href="https://github.com/wiklapandu/tokoonline2021" target="_blank">
-    <img src="https://img.shields.io/badge/Toko Online-show-blue?logo=github&style=plastic">
+<a href="https://github.com/wiklapandu/hotelonline2021" target="_blank">
+    <img src="https://img.shields.io/badge/Hotel Online-show-blue?logo=github&style=plastic">
 </a>
 <a href="https://wiklapandu.github.io/portofolio/" target="_blank">
     <img src="https://img.shields.io/badge/portofolio-Cek-green?style=plastic&logo=github">
