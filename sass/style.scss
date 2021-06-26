@@ -8,9 +8,17 @@ body{
         color: white;
     }
 }
-ul .border:hover{
-    & a{
-        color: #212529;
+.modal{
+    color: #000;
+}
+ul {
+    & li{
+        user-select: contain;
+        &.border:hover{
+            & a{
+                color: #212529;
+            }
+            background-color: white;
+        }
     }
-    background-color: white;
 }
