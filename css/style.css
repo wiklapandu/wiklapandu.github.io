@@ -1,5 +1,6 @@
-body {
-  user-select: none;
+::selection {
+  background-color: #ffff;
+  color: #212529;
 }
 
 .border {
@@ -15,8 +16,12 @@ body {
   color: #000;
 }
 
+ul {
+  user-select: none;
+}
+
 ul li {
-  user-select: contain;
+  user-select: pointer;
 }
 
 ul li.border:hover {

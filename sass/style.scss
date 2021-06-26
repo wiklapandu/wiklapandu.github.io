@@ -1,5 +1,6 @@
-body{
-    user-select: none;
+::selection{
+    background-color: #ffff;
+    color: #212529;
 }
 .border{
     transition: all 0.5s;
@@ -12,8 +13,9 @@ body{
     color: #000;
 }
 ul {
+    user-select: none;
     & li{
-        user-select: contain;
+        user-select: pointer;
         &.border:hover{
             & a{
                 color: #212529;

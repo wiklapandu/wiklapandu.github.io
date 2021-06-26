@@ -29,30 +29,7 @@
                     Full Stack Developer
                 </p>
             </div>
-            <ul class="list-unstyled">
-                <li class="my-3 py-3 px-5 border border-light">
-                    <a target="_blank" href="https://github.com/wiklapandu" class="text-decoration-none"
-                        style="font-weight: 450;">
-                        <i class="fab fa-github"></i>
-                        <span>
-                            Github
-                        </span>
-                    </a>
-                </li>
-                <li class="my-3 py-3 px-5 border border-light">
-                    <a target="_blank" href="https://www.linkedin.com/in/wiklapandu" class="text-decoration-none"
-                        style="font-weight: 450;">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                </li>
-                <li class="my-3 py-3 px-5 border border-light">
-                    <a target="_blank" href="https://www.instagram.com/_wiklapandu/" class="text-decoration-none"
-                        style="font-weight: 450;">
-                        <i class="fab fa-instagram"></i>
-                        Instagram
-                    </a>
-                </li>
+            <ul class="list-unstyled links">
             </ul>
         </div>
     </div>
@@ -72,6 +49,47 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const links = [
+            {
+                url: 'https://github.com/wiklapandu', // * tujuan url
+                icon: 'fab fa-github', // * icon yang dipakai di fontawasome
+                text: 'Github', // * yang ditulis untuk link
+            },
+            {
+                url: 'https://www.linkedin.com/in/wiklapandu',
+                icon: 'fab fa-linkedin',
+                text: 'LinkedIn',
+            },
+            {
+                url: 'https://wiklapandu.medium.com/',
+                icon: 'fab fa-medium',
+                text: 'Medium',
+            },
+            {
+                url: 'https://www.instagram.com/_wiklapandu/',
+                icon: 'fab fa-instagram',
+                text: 'Instagram',
+            },
+        ];
+
+        // ! Don't change this line
+        $(document).ready(() => {
+            const callbackMap = (element, i) => {
+                return  /*html*/`
+                <li class="my-3 py-3 px-5 border border-light">
+                    <a target="_blank" href="${element.url}" class="text-decoration-none"
+                        style="font-weight: 450;">
+                        <i class="fa-fw ${element.icon}"></i>
+                        ${element.text}
+                    </a>
+                </li>
+                `;
+            };
+            $('.list-unstyled.links').append($.map(links, callbackMap));
+        });
+    </script>
 
     <script>
         $(document).ready(() => {
