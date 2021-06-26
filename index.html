@@ -19,7 +19,7 @@
         <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center border-custom py-4">
             <div class="d-block border-light border border-2 rounded-circle overflow-hidden" style="width: 8em;"
                 data-bs-toggle="modal" data-bs-target="#showImage" id="profile">
-                <img src="./img/profile.jpg" class="img-fluid">
+                <img class="img-fluid">
             </div>
             <div class="pt-3 text-center">
                 <h5>Wikla Arlentera PS</h5>
@@ -44,13 +44,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="" class="img-fluid img-thumbnail profile">
+                    <img class="img-fluid img-thumbnail profile">
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // * img position
+        const position = './img/profile.jpg';
+
+        // ! Don't change this line
+        $(document).ready(() => {
+            $('#profile img').attr('src', position);
+        });
+    </script>
+
+    <script>
+        // list links
         const links = [
             {
                 url: 'https://github.com/wiklapandu', // * tujuan url
